@@ -10,14 +10,14 @@
 
 ## Recap on keys:
 - Primary Key: 
-        * Unique in the database
-        * It can be any data type but most commonly they are integers
-        * Every table needs a primary key
-        * It is a value that you don't ever want to change
+    * Unique in the database
+    * It can be any data type but most commonly they are integers
+    * Every table needs a primary key
+    * It is a value that you don't ever want to change
 
 - Foreign Key
-        * It is used to relate two tables together
-        * They should be the same data-type as the primary key of the table you want it to be related to
+    * It is used to relate two tables together
+    * They should be the same data-type as the primary key of the table you want it to be related to
 
 
 ## Naming convention
