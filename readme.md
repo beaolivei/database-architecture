@@ -1,46 +1,46 @@
 ## Go back to how the web works
 
-- The importance of data
-- Databases are composed by tables
-- What are tables composed of? Rows and Columns
-- Typically tables are named using snake_case
-- Tables are named in plural as a best practice, example: users, pets, etc
-
-(create a model for cats and dogs breeds)
-
-## Recap on keys:
-- Primary Key: 
-    * Unique in the database
-    * It can be any data type but most commonly they are integers
-    * Every table needs a primary key
-    * It is a value that you don't ever want to change
-
-- Foreign Key
-    * It is used to relate two tables together
-    * They should be the same data-type as the primary key of the table you want it to be related to
-
 
 ## Naming convention
+ - postgress and other open source languages: snake_case
+ - other communities (ex MSSQL - microsoft): PascalCase
+ - tables names should be plural AND columns names singular
 
-- Postgress and other open source databases use adopt snake_case as best practice
-- Other databases may adopt different conventions. For example MSSQL (from Microsoft) uses PascalCase
-- Best practices means that it is a recommended practice within the community but not enforced by the language
-- Other best practice: table's name should be plural. And the column singular
 
-## Datatypes in SQL
-[DOCS](https://www.postgresql.org/docs/current/datatype.html)
+## Thinking which tables we need to create
 
-- Prefer the types that are shared between databases. 
-- Nothing wrong with keeping up with 'simpler' types:
-        * Integer
-        * Character
-        * Date/Time
-        * Boolean
 
-## Possible Relationship Types
-- One-to-one
-- One-to-many
-- Many-to-many
+## What data does those table need?
+
+
+## Data Types
+
+- look at docs
+- most common: 
+    * integer
+    * varchar
+    * text
+    * boolean
+    * date/time
+
+## Key types (Primary Key x Foreign Key)
+
+- Primary Key: 
+    * need to be unique
+    * can have any datatype but they are normally numbers (integers)
+    * cannot be changed
+
+- Foreign Key
+    * used to relate 2 databases
+    * need to have the same type as the one from the table you are relating it with
+
+
+## Relationship between tables
+
+- One to one
+- One to many
+- Many to many
+
 
 ## Design Concepts 
 
